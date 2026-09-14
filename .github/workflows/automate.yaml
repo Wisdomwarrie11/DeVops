@@ -1,28 +1,28 @@
-name: Smart Automate
+name: Automation-flow
 
-
-on:
-  push:
-    branches:
-      - main
+on: 
+ push:
+  branches:
+   - main
 
 jobs:
   stage1:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v3
-  
+      - uses: actions/checkout@v3
+
   stage2:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v3
-  
+      - uses: actions/checkout@v3
+
   stage3:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v3
+      - uses: actions/checkout@v3
     
   stage4:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v3
+      - uses: actions/checkout@v3
+
